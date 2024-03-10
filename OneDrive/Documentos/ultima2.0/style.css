@@ -45,6 +45,7 @@ header button{
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile{
@@ -76,7 +77,9 @@ header .mobile a{
     color: var(--dark-blue);
     font-size: 1.125rem;
     line-height: 1.5rem;
-
+}
+header .desktop{
+    display: none;
 }
 main{
     max-width: 1110px;
@@ -175,6 +178,9 @@ main{
     line-height: 1.5rem;
     margin-block: 0.6rem;
 }
+.terceira-seçao a{
+    text-decoration: none;
+}
 
 .terceira-seçao p{
     font-size: 0.9375;
@@ -183,6 +189,24 @@ main{
 }
 
 @media(min-width: 1110px){
+    header >button{
+        display: none;
+    }
+    header .desktop{
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    header .desktop a{
+        font-size: 0.9375rem;
+        line-height: 1.625;
+        text-decoration: none;
+        color: var(--gun-metal);
+    }
+
+    header .desktop a:hover{
+        color: var(--vermilian);
+    }
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -205,22 +229,20 @@ main{
     .primeira-seçao h1{
         font-size: 3.5rem;
     }
+    .primeira-seçao button:hover{
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
     .segunda-seçao h2{
         font-size: 2.5rem;
     }
 
-    header >button{
-        display: none;
-    }
-    header .desktop{
+    .terceira-seçao{
         display: flex;
-        gap: 2.5rem;
+        grid-column: 1/4;
+    }
+    .terceira-seçao h2:hover{
+        color: var(--vermilian);
     }
 
-    header .desktop a{
-        font-size: 0.9375rem;
-        line-height: 1.625;
-        text-decoration: none;
-        color: var(--gun-metal);
-    }
 }
