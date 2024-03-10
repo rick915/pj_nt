@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --almost-white:  #FFFDFA;
+    --dark-blue: #00001a;
+    --gun-metal:  #5e6d7a;
+    --vermilian: #f15d51;
+    --yellow: #e9aa52;
+    --silver: #c5c6ce;
+}
+
+body{
+    padding: 1.75 rem 1rem;
+    background: var(--almost-white);
+}
+
+.header-mobile{
+    
+}
